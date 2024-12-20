@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mod-2 Assignment</title>
+<style>
+ body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  line-height: 1.6;
+  margin: 40px;
+}
+
+section {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 10px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+}
+.chicken .title { background-color: salmon; }
+.beef .title { background-color: #dc143c;
+               color:white; }
+.sushi .title { background-color: #ffb347; }
+
+/***Desktop View***/
+@media (min-width: 992px) {
+  section { width: 31%;
+    box-sizing: border-box;
+            float: left;}
+}
+
+/***Tablet View***/
+@media (min-width: 768px) and (max-width: 991px) {
+  section { width: 47%;
+    box-sizing: border-box;
+            float: left;}
+  section:nth-child(4)  {width: 100%;}
+}
+
+/**Mobile View**/
+@media (max-width: 767px) {
+  section {width: 100%;}
+}
+</style>
+</head>
+<body>
+  <h1>Our Menu</h1>
+
+<section class="chicken">
+  <div class="title">Chicken</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. ut enim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</section>
+  
+<section class="beef">
+  <div class="title">Beef</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. ut enim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</section>
+  
+<section class="sushi">
+  <div class="title">Sushi</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. ut enim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</section>
+</body>
+</html>
